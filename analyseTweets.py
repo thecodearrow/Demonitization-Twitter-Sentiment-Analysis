@@ -4,6 +4,7 @@ import re
 import codecs #provides transparent encoding/decoding
 from textblob import TextBlob  #Library for Text Processing
 import time
+from collections import Counter
 
 #Plotting dependecies
 import matplotlib.pyplot as plt; plt.rcdefaults()
@@ -15,6 +16,8 @@ positive=0
 negative=0
 neutral=0
 total=0
+
+hashtags = []
 
 #Loading.....		
 print("Performing Sentiment Analysis",end="")
@@ -85,6 +88,15 @@ with open('tweets.txt', 'w') as file:
 		file.write(tweet)
 		file.write('<br><br>\n')
 
+#Finding the hashtags in all the tweets
+finalcount={}
+for i in tweetsList:
+	hashtags.append(re.findall(r"#(\w+)", i))
+hashtagnew = [item for sub in hashtags for item in sub]
+counts = Counter(hashtagnew)
+counts = dict(counts)
+finalcount = dict(sorted(counts.items(), key=lambda kv: kv[1], reverse=True))
+countname = list(finalcount.keys())
 
 #Plotting data
 
@@ -111,4 +123,18 @@ plt.pie(performance, explode=explode, labels=objects, colors=colors,
  
 plt.axis('equal')
 plt.title('Twitter Sentiment Analysis- Demonetisation (Pie Chart) \n')
+plt.show()
+
+# Hashtag Plot
+x = np.arange(len(finalcount))
+y = list(finalcount.values())
+x = x[:15]
+y = y[:15]
+countname = countname[:15]
+plt.bar(x, y)
+plt.title('Most Trending Hashtags\n')
+plt.xticks(x, countname, rotation='vertical')
+plt.ylabel('Number of tweets')
+plt.xlabel('#Hashtags')
+plt.tight_layout()
 plt.show()
