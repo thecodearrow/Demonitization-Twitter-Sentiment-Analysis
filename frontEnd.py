@@ -29,11 +29,15 @@ print ("""
 <div id="bar-graph" style="position:absolute;top:10vw;left:0.6vw;">
 <img src="bar.png" height=500px>
 </div>
-<div id="pie-graph" style="position:absolute;top:10vw;right:0.6vw;">
+<div id="pie-graph" style="position:absolute;top:10vw;right:12vw;">
 <img src="pie.png"  height=500px>
-</div>root1234
+</div>
+<div id="hashtag" style="position:fixed;top:60%;left:40%; transform: translateX(-50%) translateY(-50%);height: 100px;width: 500px;">
+<img src="Hashtag Bar Graph.png"  height=500px>
+</div>
 
-<div id="tweet" style="position:fixed;top:30%;left:50%; transform: translateX(-50%) translateY(-50%);height: 100px;width: 500px;">
+
+<div id="tweet" style="position:fixed;top:25%;left:45%; transform: translateX(-50%) translateY(-50%);height: 100px;width: 500px;">
 <strong>
 <span style="text-decoration: underline;">Some random tweets: </span> <br><br>
 """)
