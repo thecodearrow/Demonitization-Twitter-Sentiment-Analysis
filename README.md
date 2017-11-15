@@ -17,7 +17,7 @@ All the tweets in the dataset are eventually analysed and the result is then vis
 
 ### Bar Graph
 
-![alt text](https://github.com/thecodearrow/Demonitization-Twitter-Sentiment-Analysis/blob/master/bar.pngg)
+![alt text](https://github.com/thecodearrow/Demonitization-Twitter-Sentiment-Analysis/blob/master/bar.png)
 
 ### Pie Chart 
 
