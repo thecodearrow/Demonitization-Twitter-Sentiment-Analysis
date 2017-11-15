@@ -17,11 +17,11 @@ All the tweets in the dataset are eventually analysed and the result is then vis
 
 ### Bar Graph
 
-![alt text](https://github.com/thecodearrow/Twitter-Sentiment-Analysis/blob/master/bar.png)
+![alt text](https://github.com/thecodearrow/Demonitization-Twitter-Sentiment-Analysis/blob/master/bar.pngg)
 
 ### Pie Chart 
 
-![alt text](https://github.com/thecodearrow/Twitter-Sentiment-Analysis/blob/master/pie.png)
+![alt text](https://github.com/thecodearrow/Demonitization-Twitter-Sentiment-Analysis/blob/master/pie.png)
 
 ### Hashtag Bar Graph
 ![alt text](https://github.com/thecodearrow/Demonitization-Twitter-Sentiment-Analysis/blob/master/Hashtag%20Bar%20Graph.png)
